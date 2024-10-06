@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Your existing styles */
+        @keyframes rgbBorder {
+            0% { border-color: rgb(255, 0, 0); }
+            33% { border-color: rgb(0, 255, 0); }
+            66% { border-color: rgb(0, 0, 255); }
+            100% { border-color: rgb(255, 0, 0); }
+        }
+
+        body {
+            background: url('/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: monospace;
+            color: #0f0;
+            margin-top: 100;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 500px;
+            margin-top: 20px;
+            height: 900px;
+            background-color: rgba(34, 34, 34, 0.8);
+            border: 5px solid #0f0;
+            padding: 10px;
+            padding-bottom: 60px;
+            border-radius: 10px;
+            animation: rgbBorder 10s linear infinite;
+        }
+
+        .title, .timer, .period, .bet {
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 30px;
+            text-rgba(90, 66, 66, 1)align: center;
+            margin-bottom: 20px;
+            color: #FF33cc;
+        }
+
+        .timer {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #cc00ff;
+        }
+
+        .period {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FF0000;
+        }
+
+        .bet {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00ff00;
+        }
+
+        .button {
+            display: block;
+            margin: 20px auto;
+            width: 170px;
+            height: 60px;
+            background-color: #3385ff;
+            border: none;
+            color: #000;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button-container {
+  text-align: center;
+}
+
+.telegram-btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, #0088cc, #00bfff);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 8px 15px rgba(0, 136, 204, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.telegram-btn:hover {
+  background: linear-gradient(45deg, #00bfff, #0088cc);
+  box-shadow: 0 15px 25px rgba(0, 136, 204, 0.6);
+  transform: translateY(-2px);
+}
+
+.telegram-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.3s ease;
+}
+
+.telegram-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.telegram-icon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">TKS FREE MOD</div>
+    <div id="timeRemaining" class="timer">00:00</div>
+    <div id="issueNumber" class="period">Period: Loding</div>
+    <div id="predictedNumber" class="bet">BET:-<br><br>Loding</div>
+    <button id="refreshButton" class="button">REFRESH</button>
+    <div class="button-container">
+        <a href="https://t.me/+JHucnsE8qpZmMjll" target="_blank" class="telegram-btn">
+            <i class="telegram-icon"></i>
+            TELEGRAM CHANNEL
+        </a>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
